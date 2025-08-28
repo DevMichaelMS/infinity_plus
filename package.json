@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp watch",
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,8 +21,13 @@
   },
   "homepage": "https://github.com/DevMichaelMS/infinity_plus#readme",
   "devDependencies": {
-    "gulp": "^5.0.1",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^9.1.0",
     "gulp-sass": "^6.0.1",
     "sass": "^1.90.0"
+  },
+  "dependencies": {
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0"
   }
 }
