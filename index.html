@@ -1,114 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="src/images/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Infinity +</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="hero">
-        <div class="hero__content">
-            <h1 class="hero__content__branding">
-                <img src="dist/images/infiniteplus.svg" alt="Infinity+">
-            </h1>
-            <h3 class="title--small">As melhores histórias em um só lugar.</h3>
-            <p>
-                <a href="#" class="link-text">Assinar o Infinity+</a>
-                <br>
-                <span class="text">
-                    R$ 27,90/mês ou R$ 279,90/ano à vista*
-                </span>
-            </p>
-            <ul class="hero__content__combos">
-                <li class="hero__content__combos__combo">
-                    <img src="dist/images/logos/infinity_start_plus.png" alt="Infinity+ - Start+ - Combo+">
-                    <button>Assine Agora</button>
-                    <span class="text">R$ 45,90/mês*</span>
-                </li>
-                <li class="hero__content__combos__combo">
-                    <img src="dist/images/logos/infinity_start_plus_starkplay.png" alt="Start+ - Infinity+ - starkplay - Combo+">
-                    <button>Assine Agora</button>
-                    <span class="text">R$ 55,90/mês*</span>
-                </li>
-            </ul>
-            <p class="text--small">O preço pode variar caso a assinatura seja feita através de outras plataformas.</p>
-        </div>
+      <div class="hero__content">
+        <h1 class="hero__content__branding">
+          <img src="dist/images/infiniteplus.svg" alt="Infinity+" />
+        </h1>
+        <h3 class="title--small">As melhores histórias em um só lugar.</h3>
+        <p>
+          <a href="#" class="link-text">Assinar o Infinity+</a>
+          <br/>
+          <span class="text"> R$ 27,90/mês ou R$ 279,90/ano à vista* </span>
+        </p>
+        <ul class="hero__content__combos">
+          <li class="hero__content__combos__combo">
+            <img
+              src="dist/images/logos/infinity_start_plus.png"
+              alt="Infinity+ - Start+ - Combo+"
+            />
+            <button>Assine Agora</button>
+            <span class="text">R$ 45,90/mês*</span>
+          </li>
+          <li class="hero__content__combos__combo">
+            <img
+              src="dist/images/logos/infinity_start_plus_starkplay.png"
+              alt="Start+ - Infinity+ - starkplay - Combo+"
+            />
+            <button>Assine Agora</button>
+            <span class="text">R$ 55,90/mês*</span>
+          </li>
+        </ul>
+        <p class="text--small">
+          *O preço pode variar caso a assinatura seja feita através de outras
+          plataformas.
+        </p>
+      </div>
     </section>
     <section class="show">
-        <nav class="shows__tabs">
-            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
-                Em Breve
-            </button>
-            <button data-tab-button="populares" class="shows__tabs__button">
-                Mais Populares
-            </button>
-            <button data-tab-button="start+" class="shows__tabs__button">
-                Mais no Start+
-            </button>
-        </nav>
-        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
-            <li class="shows__list__item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomem">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem Limites">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The Santa Clauses">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
-            </li>
-        </ul>
-        <ul data-tab-id="populares" class="shows__list">
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/bluey.jpg" alt="Bluey">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="Cavaleira da Lua">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="O Incrivel Dr Pol">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Obi Wan">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/red.jpg" alt="Red">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="Tudo Igual Sqn">
-            </li>
-        </ul>
-        <ul data-tab-id="start+" class="shows__list">
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_start_plus/belair.jpg" alt="Belair">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_start_plus/libertadores.jpg" alt="Libertadores">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_start_plus/nba.jpg" alt="NBA">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_start_plus/os_simpson.jpg" alt="Os Simpsons">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_start_plus/premier_league.jpg" alt="Premier League">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/mais_no_start_plus/the_kardashians.jpg" alt="As Kardashians">
-            </li>
-        </ul>
+      <nav class="shows__tabs">
+        <button
+          data-tab-button="em_breve"
+          class="shows__tabs__button shows__tabs__button--is-active"
+        >
+          Em Breve
+        </button>
+        <button data-tab-button="populares" class="shows__tabs__button">
+          Mais Populares
+        </button>
+        <button data-tab-button="start+" class="shows__tabs__button">
+          Mais no Start+
+        </button>
+      </nav>
+      <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+        <li class="shows__list__item">
+          <img src="./dist/images/em_breve/spidey.jpg" alt="spidey" />
+        </li>
+        <li class="shows__list__item">
+          <img
+            src="./dist/images/em_breve/desencantada.jpg"
+            alt="Desencantada"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomem" />
+        </li>
+        <li class="shows__list__item">
+          <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem Limites" />
+        </li>
+        <li class="shows__list__item">
+          <img
+            src="./dist/images/em_breve/the_santa_clauses.jpg"
+            alt="The Santa Clauses"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img src="./dist/images/em_breve/willow.jpg" alt="Willow" />
+        </li>
+      </ul>
+      <ul data-tab-id="populares" class="shows__list">
+        <li class="shows__list__item">
+          <img src="./dist/images/mais_populares/bluey.jpg" alt="Bluey" />
+        </li>
+        <li class="shows__list__item">
+          <img
+            src="./dist/images/mais_populares/cavaleira_da_lua.jpg"
+            alt="Cavaleira da Lua"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg"
+            alt="O Incrível Dr Pol"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Obi Wan" />
+        </li>
+        <li class="shows__list__item">
+          <img src="./dist/images/mais_populares/red.jpg" alt="Red" />
+        </li>
+        <li class="shows__list__item">
+          <img
+            src="./dist/images/mais_populares/tudo_igual_sqn.jpg"
+            alt="Tudo Igual Sqn"
+          />
+        </li>
+      </ul>
+      <ul data-tab-id="start+" class="shows__list">
+        <li class="shows__list__item">
+          <img src="./dist/images/mais_no_start_plus/belair.jpg" alt="Belair" />
+        </li>
+        <li class="shows__list__item">
+          <img
+            src="./dist/images/mais_no_start_plus/libertadores.jpg"
+            alt="Libertadores"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img src="./dist/images/mais_no_start_plus/nba.jpg" alt="NBA" />
+        </li>
+        <li class="shows__list__item">
+          <img
+            src="./dist/images/mais_no_start_plus/os_simpson.jpg"
+            alt="Os Simpsons"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            src="./dist/images/mais_no_start_plus/premier_league.jpg"
+            alt="Premier League"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img
+            src="./dist/images/mais_no_start_plus/the_kardashians.jpg"
+            alt="As Kardashians"
+          />
+        </li>
+      </ul>
     </section>
     <script src="src/scripts.js"></script>
-</body>
+  </body>
 </html>
