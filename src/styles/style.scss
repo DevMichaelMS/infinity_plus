@@ -1,69 +1,67 @@
-@use 'hero';
-@use 'variaveis';
-@use 'shows';
+@use "hero";
+@use "variaveis";
+@use "shows";
 
 @font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Regular.woff2);
-    font-weight: 400;
+  font-family: Avenir;
+  src: url(../../assets/fonts/Avenir-Regular.woff2);
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Bold.woff2);
-    font-weight: 700;
+  font-family: Avenir;
+  src: url(../../assets/fonts/Avenir-Bold.woff2);
+  font-weight: 700;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Avenir, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
 }
 
-
 body {
-    background-color: variaveis.$backColor;
-
+  background-color: variaveis.$backColor;
 }
 
 @mixin title($fontSize: 40px) {
-    @include text($fontSize);
-    color: variaveis.$corTextoSecundaria;
+  @include text($fontSize);
+  color: variaveis.$corTextoSecundaria;
 }
 
 @mixin text($fontSize: 16px) {
-    font-size: $fontSize;
-    line-height: $fontSize + 10px;
-    color: variaveis.$corTextoPrincipal;
+  font-size: $fontSize;
+  line-height: $fontSize + 10px;
+  color: variaveis.$corTextoPrincipal;
 }
 
 .text--big {
-    @include text(18px);
+  @include text(18px);
 }
 
 .text {
-    @include text;
+  @include text;
 }
 
 .text--small {
-    @include text(12px);
+  @include text(12px);
 }
 
 .link-text {
-    @include text(18px);
-    color: variaveis.$corTextoSecundaria;
-    text-decoration: underline;
+  @include text(18px);
+  color: variaveis.$corTextoSecundaria;
+  text-decoration: underline;
 }
 
 .title--big {
-    @include title(44px);
+  @include title(44px);
 }
 
 .title {
-    @include title;
+  @include title;
 }
 
 .title--small {
-    @include title(28px);
+  @include title(28px);
 }
