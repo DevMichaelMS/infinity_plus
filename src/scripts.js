@@ -2,6 +2,31 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll("[data-tab-button]");
   const questions = document.querySelectorAll("[data-faq-question]");
 
+  const heroSection = document.querySelector(".hero");
+  const heightHero = heroSection.clientHeight;
+
+  window.addEventListener("scroll", function() {
+    const position = window.scrollY;
+
+    if (position < heightHero) {
+      hideHeader();
+    } else {
+      showHeader();
+    }
+  });
+
+// SEÇÃO DE ATRAÇÔES
+
+  function hideHeader() {
+    const header = document.querySelector(".header");
+    header.classList.add("header--is-hidden");
+  }
+
+  function showHeader() {
+    const header = document.querySelector(".header");
+    header.classList.remove("header--is-hidden");
+  }
+
   const ativaBotao = (botaoAtivo) => {
     const botoes = document.querySelectorAll("[data-tab-button]");
     botoes.forEach((botao) => {
@@ -9,6 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     botaoAtivo.classList.add("shows__tabs__button--is-active");
   };
+
+  
 
   const escondeAbas = () => {
     const abas = document.querySelectorAll("[data-tab-id]");
