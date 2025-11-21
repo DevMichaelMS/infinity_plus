@@ -12,11 +12,26 @@
     <title>Infinity +</title>
   </head>
   <body>
+    <header class="header header--is-hidden">
+      <div class="header__container">
+        <h1>
+          <img class="header__logo" src="dist/images/infiniteplus.svg" alt="Infinity+" />
+        </h1>
+        <ul class="header__links">
+          <li class="header__links__item">
+            <a href="#" class="button button--secondary">Assine agora</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#" class="button button--dark">Entrar</a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <section class="hero">
       <div class="hero__content">
-        <h1 class="hero__content__branding">
+        <div class="hero__content__branding">
           <img src="dist/images/infiniteplus.svg" alt="Infinity+" />
-        </h1>
+        </div>
         <h3 class="title--small">As melhores histórias em um só lugar.</h3>
         <p>
           <a href="#" class="link-text">Assinar o Infinity+</a>
@@ -213,7 +228,10 @@
     </section>
 
     <section class="image-text-section image-text-section--image-full-width">
-      <img src="./src/images/fundo_rei_leao.png" alt="Rei Leão" />
+      <picture>
+        <source media="(max-width: 768px)" srcset="./src/images/fundo_rei_leao_celular.png" />
+        <img src="./src/images/fundo_rei_leao.png" alt="Rei Leão" />
+      </picture>
       <div
         class="image-text-section__text_container image-text-section--image-full-width__text_container"
       >
