@@ -1,5 +1,13 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
+const uglyfy = require("gulp-uglify");
+
+function scripts() {
+  return gulp
+    .src("./src/scripts/*.js")
+    .pipe(uglyfy())
+    .pipe(gulp.dest("./dist/js"));
+}
 
 async function comprimeImagens() {
   const imagemin = (await import("gulp-imagemin")).default;
@@ -32,8 +40,9 @@ function styles() {
     .pipe(gulp.dest("./dist/css"));
 }
 
-exports.default = gulp.parallel(styles, comprimeImagens);
+exports.default = gulp.parallel(styles, comprimeImagens, scripts);
 
 exports.watch = function () {
   gulp.watch("./src/styles/*.scss", gulp.parallel(styles));
+  gulp.watch("./src/scripts/*.js", gulp.parallel(scripts));
 };
